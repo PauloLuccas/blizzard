@@ -286,6 +286,10 @@
     height: 85rem;
     background: url('../img/background-section-download.png') no-repeat center center;
     overflow: hidden;
+
+    .container {
+        position: relative;
+    }
     
     .text-left {
         width: 100%;
@@ -335,6 +339,46 @@
             line-height: 5.2rem;
             font-size: 1.6rem;
             font-weight: 600;
+            margin-bottom: 4.9rem;
+        }
+
+        .app {
+            display: flex;
+            align-items: center;
+            p {
+                font-weight: 600;
+                font-size: 1.4rem;
+                line-height: 2.1rem;
+                color: #E5E5E5;
+                max-width: 19rem;
+                margin-left: 1.8rem;
+                a {
+                    text-decoration: underline;
+                    transition: color .3s;
+                    &:hover {
+                        color: $primary-light;
+                    }
+                }
+            }
+        }
+    }
+
+    .image {
+        position: absolute;
+        top: 9.9rem;
+        right: -27.5rem;
+        width: 100%;
+        max-width: 106.6rem;
+        height: 61rem;
+
+        .img-lg {
+            position: 0;
+        }
+
+        .img-sm {
+            position: absolute;
+            right: 5.3rem;
+            bottom: -2.8rem;
         }
     }
 }
