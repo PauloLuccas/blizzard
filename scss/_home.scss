@@ -373,12 +373,16 @@
 
         .img-lg {
             position: 0;
+            top: 0;
+            left: 0;
+            animation: float 9s ease-in-out infinite;
         }
 
         .img-sm {
             position: absolute;
             right: 5.3rem;
             bottom: -2.8rem;
+            animation: float 6s ease-in-out infinite;
         }
     }
 }

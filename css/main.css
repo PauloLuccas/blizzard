@@ -40,6 +40,35 @@ body {
   }
 }
 
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
+
+@keyframes float {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
 .btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -601,11 +630,17 @@ header .right-container .btn:not(:first-child) {
 }
 .s-donwload .image .img-lg {
   position: 0;
+  top: 0;
+  left: 0;
+  -webkit-animation: float 9s ease-in-out infinite;
+  animation: float 9s ease-in-out infinite;
 }
 .s-donwload .image .img-sm {
   position: absolute;
   right: 5.3rem;
   bottom: -2.8rem;
+  -webkit-animation: float 6s ease-in-out infinite;
+  animation: float 6s ease-in-out infinite;
 }
 
 @-webkit-keyframes fadeUp {
