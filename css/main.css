@@ -234,6 +234,29 @@ header .right-container {
 header .right-container .btn:not(:first-child) {
   margin-left: 1.6rem;
 }
+header .right-container .btn-mobile {
+  display: none;
+}
+@media (max-width: 991px) {
+  header .left-container nav {
+    display: none;
+  }
+  header .right-container .btn-mobile {
+    display: block;
+    margin-left: 8.9rem;
+  }
+}
+@media (max-width: 560px) {
+  header {
+    height: 8rem;
+  }
+  header .left-container .logo {
+    max-width: 6.9rem;
+  }
+  header .right-container .btn {
+    display: none;
+  }
+}
 
 .menu {
   position: absolute;
@@ -359,10 +382,16 @@ header .right-container .btn:not(:first-child) {
   color: #fff;
   margin-left: 1rem;
 }
+@media (max-width: 613px) {
+  .menu {
+    display: none;
+  }
+}
 
 .s-hero {
   position: relative;
   z-index: 2;
+  display: none;
 }
 .s-hero .slide-principal {
   width: 100%;
@@ -570,6 +599,7 @@ header .right-container .btn:not(:first-child) {
 
 .s-games {
   padding: 8.3rem 0 11rem;
+  display: none;
 }
 .s-games .top {
   display: -webkit-box;
@@ -711,6 +741,7 @@ header .right-container .btn:not(:first-child) {
   height: 85rem;
   background: url("../img/background-section-download.png") no-repeat center center;
   overflow: hidden;
+  display: none;
 }
 .s-donwload .container {
   position: relative;
