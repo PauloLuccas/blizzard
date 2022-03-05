@@ -2,7 +2,15 @@ var slide_thumbnail = new Swiper(".slide-thumbnail", {
   sliderPerView: 5,
   direction: 'vertical',
   spaceBetween: 20,
-  watchSlidesProgress: true
+  watchSlidesProgress: true,
+  breakpoints: {
+    320: {
+      direction: 'horizontal'
+    },
+    1200: {
+      direction: 'vertical'
+    }
+  }
 });
 
 const progressSlide = document.querySelector('.js-progress');
