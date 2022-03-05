@@ -138,6 +138,25 @@ body {
   line-height: 21px;
   color: rgba(229, 229, 229, 0.8);
 }
+@media (max-width: 1200px) {
+  .game-card .image {
+    height: 34.3rem;
+  }
+}
+@media (max-width: 991px) {
+  .game-card .image {
+    height: 30.3rem;
+  }
+}
+@media (max-width: 560px) {
+  .game-card .image {
+    height: 21.3rem;
+    margin-bottom: 0;
+  }
+  .game-card .info {
+    display: none;
+  }
+}
 
 header {
   position: absolute;
@@ -677,7 +696,6 @@ header .right-container .btn-mobile {
 
 .s-games {
   padding: 8.3rem 0 11rem;
-  display: none;
 }
 .s-games .top {
   display: -webkit-box;
@@ -812,6 +830,54 @@ header .right-container .btn-mobile {
 }
 .s-games .tab-games-content .tab-pane-games .card-all-games span img {
   margin-right: 1.3rem;
+}
+@media (max-width: 991px) {
+  .s-games .tab-games-content .tab-pane-games.active {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .s-games .top .left-top span {
+    display: none;
+  }
+}
+@media (max-width: 560px) {
+  .s-games {
+    padding-top: 5.7rem;
+    padding-bottom: 6.9rem;
+  }
+  .s-games .top {
+    margin-bottom: 5.7rem;
+  }
+  .s-games .top .left-top h2 {
+    font-size: 2.8rem;
+  }
+  .s-games .top .right-top {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+  .s-games .top .right-top ul {
+    display: none;
+  }
+  .s-games .top .right-top .btn-all-games {
+    font-size: 1.4rem;
+  }
+  .s-games .tab-games-content .tab-pane-games.active {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2.4rem 1.6rem;
+  }
+  .s-games .tab-games-content .tab-pane-games .card-all-games {
+    height: 21.2rem;
+  }
+  .s-games .tab-games-content .tab-pane-games .card-all-games img {
+    max-width: 6.9rem;
+  }
+  .s-games .tab-games-content .tab-pane-games .card-all-games span {
+    margin-top: 1.5rem;
+    font-size: 1.4rem;
+  }
+  .s-games .tab-games-content .tab-pane-games .card-all-games span img {
+    display: none;
+  }
 }
 
 .s-donwload {
