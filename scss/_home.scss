@@ -820,3 +820,9 @@
         transform: translateY(0px);
     }
 }
+
+body {
+    &.active {
+        overflow: hidden;
+    }
+}

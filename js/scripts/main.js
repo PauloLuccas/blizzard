@@ -99,5 +99,61 @@ btnMenu.forEach((btn, index) => {
 
     btn.classList.add('active');
     menuSite[index].classList.add('active');
-  })
+  });
+});
+
+
+const openMenuMobile = document.querySelector('.btn-mobile');
+const header = document.querySelector('header');
+
+openMenuMobile.addEventListener('click', (event) => {
+  event.preventDefault();
+
+  header.classList.add('menu-mobile');
+
+  console.log(header)
+})
+
+const btnMenuMobile = document.querySelectorAll('.js-btn-menu-mobile');
+const menuSiteMobile = document.querySelectorAll('.js-menu');
+const body = document.querySelector('body');
+//const areaMenu = document.querySelector('.nav-menu');
+
+btnMenuMobile.forEach((btn, index) => {
+  btn.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    body.classList.add('active');
+    
+    menuSiteMobile.forEach(itemMenu => {
+      itemMenu.classList.remove('active');
+      
+      itemMenu.addEventListener('click', (event) => {
+        event.preventDefault();
+        itemMenu.classList.remove('active');
+        btnMenuMobile.forEach(itemBtn => {
+          itemBtn.classList.remove('active');
+        });
+      });
+    })
+
+    btn.classList.add('active');
+    menuSite[index].classList.add('active');
+  });
+});
+
+areaMenu.addEventListener('click', (event) => {
+  event.preventDefault();
+
+  menuSiteMobile.forEach(itemMenu => {
+    itemMenu.classList.remove('active');
+    
+    itemMenu.addEventListener('click', (event) => {
+      event.preventDefault();
+      itemMenu.classList.remove('active');
+      btnMenuMobile.forEach(itemBtn => {
+        itemBtn.classList.remove('active');
+      });
+    });
+  });
 })
