@@ -885,7 +885,6 @@ header .right-container .btn-mobile {
   height: 85rem;
   background: url("../img/background-section-download.png") no-repeat center center;
   overflow: hidden;
-  display: none;
 }
 .s-donwload .container {
   position: relative;
@@ -990,6 +989,42 @@ header .right-container .btn-mobile {
   bottom: -2.8rem;
   -webkit-animation: float 6s ease-in-out infinite;
   animation: float 6s ease-in-out infinite;
+}
+@media (max-width: 991px) {
+  .s-donwload .text-left {
+    max-width: 29.9rem;
+  }
+  .s-donwload .text-left h2 {
+    font-size: 3.2rem;
+    margin-bottom: 3rem;
+  }
+  .s-donwload .image {
+    right: -35rem;
+  }
+}
+@media (max-width: 560px) {
+  .s-donwload {
+    height: auto;
+    padding-bottom: 5rem;
+  }
+  .s-donwload .text-left {
+    padding-top: 6.3rem;
+    margin-bottom: 4rem;
+  }
+  .s-donwload .text-left h2 {
+    font-size: 2.8rem;
+  }
+  .s-donwload .image {
+    position: relative;
+    top: 0;
+    right: 0;
+    height: 27rem;
+  }
+  .s-donwload .image .img-sm {
+    right: 0;
+    bottom: 0;
+    max-width: 27.6rem;
+  }
 }
 
 .show-modal .modal {
