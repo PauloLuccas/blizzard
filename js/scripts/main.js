@@ -63,7 +63,7 @@ allFilters.forEach((filter, index) => {
 });
 
 const btnOpenModal = document.querySelector('.js-open-modal');
-const btnCloseModal = document.querySelector('.js-close');
+const btnCloseModal = document.querySelector('.js-close img');
 
 btnOpenModal.addEventListener('click', (event) => {
   event.preventDefault();
@@ -71,7 +71,8 @@ btnOpenModal.addEventListener('click', (event) => {
   tagHtml.classList.add('show-modal');
 });
 
-btnCloseModal.addEventListener('click', () => {
+btnCloseModal.addEventListener('click', (event) => {
+  event.preventDefault();
   let tagHtml = document.documentElement;
   tagHtml.classList.remove('show-modal');
 });
@@ -117,7 +118,7 @@ openMenuMobile.addEventListener('click', (event) => {
 const btnMenuMobile = document.querySelectorAll('.js-btn-menu-mobile');
 const menuSiteMobile = document.querySelectorAll('.js-menu');
 const body = document.querySelector('body');
-//const areaMenu = document.querySelector('.nav-menu');
+const areaMenu = document.querySelector('.nav-menu');
 
 btnMenuMobile.forEach((btn, index) => {
   btn.addEventListener('click', (event) => {
